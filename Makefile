@@ -94,6 +94,7 @@ ifeq ($(TANZU_FORCE_NO_INIT), true)
 LD_FLAGS += -X 'github.com/vmware-tanzu/tanzu-framework/pkg/v1/cli/command/core.forceNoInit=true'
 endif
 
+
 ifneq ($(strip $(TKG_DEFAULT_IMAGE_REPOSITORY)),)
 LD_FLAGS += -X 'github.com/vmware-tanzu/tanzu-framework/pkg/v1/config.DefaultStandaloneDiscoveryRepository=$(TKG_DEFAULT_IMAGE_REPOSITORY)'
 endif
